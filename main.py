@@ -22,7 +22,7 @@ async def start(message: Message):
 # Обработка предложки
 @dp.message(F.chat.type == "private")
 async def handle_submission(message: Message):
-    caption = f"📬 <b>Предложка от</b> @{message.from_user.username or message.from_user.full_name}:"
+    caption = f"📬 <b>#предложка от</b> @{message.from_user.username or message.from_user.full_name}:"
 
     try:
         if message.text:
